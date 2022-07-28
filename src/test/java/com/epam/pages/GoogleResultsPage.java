@@ -8,12 +8,11 @@ import org.openqa.selenium.WebElement;
 import java.util.List;
 import java.util.Locale;
 
-public class GoogleResultsPage {
+public class GoogleResultsPage extends BasePage {
 
-    private WebDriver driver;
 
     public GoogleResultsPage (WebDriver driver) {
-        this.driver = driver;
+        super(driver);
     }
 
     public void assertSearchResults (String searchResults) {
@@ -24,5 +23,9 @@ public class GoogleResultsPage {
                 Assertions.assertTrue(searchResultPageLinkText.toLowerCase(Locale.ROOT).contains(searchResults));
             }
         }
+    }
+
+    public String getTitle () {
+        return driver.getTitle();
     }
 }
