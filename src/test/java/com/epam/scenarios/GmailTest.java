@@ -1,13 +1,9 @@
 package com.epam.scenarios;
 
 import com.epam.pages.GoogleGmailPage;
-import com.epam.pages.GoogleResultsPage;
-import com.epam.pages.GoogleSearchPage;
 import org.junit.jupiter.api.*;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 
-import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class GmailTest extends BaseTest {
 
