@@ -18,22 +18,27 @@ public class SearchingBarTest extends BaseTest {
         assertTrue(googleSearchPage.getTitle().contains("Google"));
     }
 
+//    @Test
+//    public void test () {
+//        Assertions.assertTrue(true);
+//    }
+
     @Test
     public void testSearchAndPressEnter() {
         googleSearchPage.searchAndPressEnter("Webdriver");
         assertTrue(googleResultsPage.getTitle().contains("webdriver - Google Search"));
     }
-
-    @Test
-    public void testSearchAndPressSearchButton() {
-        googleSearchPage.searchAndPressSearchButton("Webdriver");
-        assertTrue(googleResultsPage.getTitle().contains("webdriver - Google Search"));
-    }
-
-    @Test
-    public void testClearButtonOnSearchBar() {
-        googleSearchPage.typeSearchQueryInSearchBar("Webdriver");
-        googleSearchPage.clearSearchBar();
-        assertTrue(googleSearchPage.getTitle().contains("Google"));
-    }
+//
+//    @Test
+//    public void testSearchAndPressSearchButton() {
+//        googleSearchPage.searchAndPressSearchButton("Webdriver");
+//        assertTrue(googleResultsPage.getTitle().contains("webdriver - Google Search"));
+//    }
+//
+//    @Test
+//    public void testClearButtonOnSearchBar() {
+//        googleSearchPage.typeSearchQueryInSearchBar("Webdriver");
+//        googleSearchPage.clearSearchBar();
+//        assertTrue(googleSearchPage.getTitle().contains("Google"));
+//    }
 }

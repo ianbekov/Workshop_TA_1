@@ -23,7 +23,7 @@ public abstract class BaseTest {
     }
 
 
-    @AfterEach
+//    @AfterEach
     public void closeBrowser() {
         driver.quit();
     }
